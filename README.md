@@ -1,5 +1,5 @@
 This is a very simple, badly written Rust program to help you
-Kondo your hard drive.
+[Kondo][] your hard drive.
 
 Given a root directory, it simply finds all files and directories
 within that are at least 50mb in size, and outputs them
@@ -21,6 +21,8 @@ Here's an example of `kondo.csv`:
 | 1861       | C:\Program Files\Docker\Docker                     | 
 | 1839       | C:\Program Files\Docker\Docker\resources           | 
 | 1720       | C:\Program Files\QGIS 2.18                         | 
+
+[Kondo]: https://en.wikipedia.org/wiki/Marie_Kondo
 
 ## Quick start
 
