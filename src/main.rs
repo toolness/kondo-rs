@@ -8,6 +8,7 @@ use std::path::Path;
 const CSV_FILENAME: &str = "kondo.csv";
 const FILE_LOG_INTERVAL: u64 = 10_000;
 const ONE_GB: f32 = 1_000_000_000.0;
+const ONE_MB: u64 = 1_000_000;
 const NONTRIVIAL_SIZE: u64 = 50_000_000;
 
 #[derive(Eq, PartialEq, Debug)]
@@ -93,8 +94,9 @@ impl Stats {
         println!("Writing {:?}.", path);
         let f = fs::File::create(path)?;
         let mut bw = io::BufWriter::new(f);
+        bw.write(b"size in mb,path\n")?;
         for sp in self.nontrivial.iter() {
-            let size = sp.size.to_string();
+            let size = (sp.size / ONE_MB).to_string();
             bw.write(size.as_bytes())?;
             bw.write(b",")?;
             bw.write(sp.path.as_bytes())?;
