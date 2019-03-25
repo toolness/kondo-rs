@@ -15,12 +15,6 @@ Here's an example of `kondo.csv`:
 | 2712       | C:\Program Files\Unity\Editor\Data                 | 
 | 2686       | C:\Program Files\NVIDIA GPU Computing Toolkit      | 
 | 2686       | C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA | 
-| 2502       | C:\Program Files\NVIDIA Corporation                | 
-| 2135       | C:\Program Files\NVIDIA Corporation\Installer2     | 
-| 1861       | C:\Program Files\Docker                            | 
-| 1861       | C:\Program Files\Docker\Docker                     | 
-| 1839       | C:\Program Files\Docker\Docker\resources           | 
-| 1720       | C:\Program Files\QGIS 2.18                         | 
 
 [Kondo]: https://en.wikipedia.org/wiki/Marie_Kondo
 
